@@ -1,6 +1,6 @@
 @import "./fonts.css";
-@import "./partials/_variables.css";
-@import "./partials/_global.css";
+@import "./partials/variables.css";
+@import "./partials/global.css";
 
 /* .container {
     border: 1px solid black;
