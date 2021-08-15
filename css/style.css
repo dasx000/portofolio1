@@ -1,6 +1,6 @@
-@import url("./fonts.css");
-@import url("./partials/_variables.css");
-@import url("./partials/_global.css");
+@import "./fonts.css";
+@import "./partials/_variables.css";
+@import "./partials/_global.css";
 
 /* .container {
     border: 1px solid black;
