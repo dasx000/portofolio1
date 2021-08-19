@@ -1,20 +1,20 @@
 /* mengatur responsive */
-/* @media screen and (max-width: 600px) {
-    .img{
-      display: none;
-      width: 500px;
-    }
-  
-    .gambar{
-      display: block;
-    }
-  }
-   */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {}
+
+@media only screen and (max-width: 800px) {
   .container {
     margin: auto;
   }
 
+  .site-main .brand-area .experience-area .years-area,
+  .site-main .brand-area .experience-area .call-area {
+    padding-left: 1%;
+  }
+
+  .site-main .subscribe-us-area .subscribe form .input-textbox input {
+    width: 15rem;
+    margin: 1rem 2.8rem;
+  }
 }
 
 /* @media screen and (max-width: 1199px) {

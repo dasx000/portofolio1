@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    //add class img-fluid
+    $('.site-main .project-area .our-project .img img').addClass('img-fluid')
 
     let navActive = $('.header-area .main-menu .navbar .navbar-nav .nav-item a')
     navActive.click((e) => {
@@ -23,8 +25,8 @@ $(document).ready(function () {
 
     })
 
-
-    $('.project-area .button-group #btn1').trigger('click')
+    // Galery swipe
+    // $('.project-area .button-group #btn1').trigger('click')
 
     $('.project-area .grid .test-popup-link').magnificPopup({
         type: 'image',
