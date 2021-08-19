@@ -2,9 +2,9 @@
 @import "./partials/variables.css";
 @import "./partials/global.css";
 
-.container {
+/* .container {
     border: 1px solid black;
-}
+} */
 
 
 /* start navbar */
@@ -16,12 +16,15 @@
     /* font-family: var(--roboto); */
     text-transform: uppercase;
     /* font-weight: 500; */
+    margin-left: 10px;
     padding: 1rem;
     color: var(--title-color);
     /* border: 1px solid black; */
+
 }
 
-.header-area .main-menu .navbar .navbar-nav .nav-item .active {
+
+.nav-active {
 
     /* background: var(--gradient-color);
     -webkit-background-clip: text;
@@ -29,8 +32,8 @@
     background-clip: text; */
     background: var(--gradient-color);
     background-clip: padding-box;
-    color: whitesmoke;
-
+    color: whitesmoke !important;
+    border-radius: 5px;
 
 }
 
@@ -43,8 +46,21 @@
     background: var(--gradient-color);
     background-clip: padding-box;
     color: whitesmoke;
+    border-radius: 5px;
 
 
+}
+
+/* sticky navbar */
+.navbar_fixed {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    box-shadow: var(--box-shadow);
+    top: -1px;
+    background: #ffffff;
+    left: 0;
+    right: 0;
 }
 
 
@@ -80,7 +96,7 @@
 /* start about area */
 .site-main .about-area {
     padding: 5rem 0rem;
-    background: #e029290a;
+    /* background: #e029290a; */
 }
 
 .site-main .about-area .about-title h2 span {
@@ -133,7 +149,8 @@
 
 .site-main .brand-area .experience-area {
     padding-left: 1rem;
-    background: #e029290a;
+    background-color: aliceblue;
+
 }
 
 
@@ -166,3 +183,150 @@
 
 
 /* end brand area */
+
+
+/* start services area */
+.site-main .services-area {
+    padding: 7rem 0;
+}
+
+.site-main .services-area .services-title {
+    padding: .14rem;
+}
+
+.site-main .services-area .services-title h1 {
+    font-size: 35px;
+}
+
+.site-main .services-area .services-list .services {
+    margin: 2rem .5rem;
+    padding: 2rem 0;
+    transition: box-shadow .2s ease;
+}
+
+.site-main .services-area .services-list .services:hover {
+    box-shadow: var(--box-shadow);
+    transform: scale(1.02);
+}
+
+/* end services area  */
+
+/* start project area */
+.site-main .project-area {
+    padding: 5rem 0;
+
+}
+
+.site-main .project-area .button-group button {
+    border: none;
+    background: transparent;
+    font: normal 600 16px/100px var(--roboto);
+    text-transform: uppercase;
+}
+
+.site-main .project-area .button-group button+button {
+    margin-left: 3rem;
+}
+
+.site-main .project-area .our-project .title h4 {
+    font: normal 700 25px/10px var(--roboto);
+}
+
+.site-main .project-area .our-project .img a:hover {
+    filter: brightness(1.1) drop-shadow(1px 8px 20px #b1afaf)
+}
+
+/* end project area */
+
+/* start about me area */
+.site-main .about-area {
+    padding: 7rem 0;
+}
+
+.site-main .about-area .client {
+    background: #ffffff10;
+    box-shadow: var(--box-shadow);
+    margin: 3rem 0;
+}
+
+.site-main .about-area .client-img {
+    padding: 2rem;
+}
+
+.site-main .about-area .about-client {
+    padding-top: 2rem;
+}
+
+.site-main .about-area .about-client h4 {
+    font: normal bold 20px/25px var(--roboto);
+}
+
+.site-main .about-area .about-client p {
+    font-size: 13px
+}
+
+.site-main .about-area .client-img img {
+    border-radius: 50%;
+}
+
+.site-main .about-area .owl-carousel .owl-item {
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+
+/* end about me area */
+
+/* start subscribe area */
+.site-main .subscribe-us-area {
+    padding: 7rem 0;
+}
+
+.site-main .subscribe-us-area .subscribe {
+    /* background: url(../assets/img/subscribe-bg.png) no-repeat; */
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+    padding: 7rem 0;
+}
+
+.site-main .subscribe-us-area .subscribe .subscribe-title p {
+    color: whitesmoke;
+}
+
+.site-main .subscribe-us-area .subscribe {
+    font-family: var(--roboto);
+}
+
+/* end subscribe area */
+
+/* start footer area */
+.footer-area {
+    padding: 7rem 0 1rem 0;
+}
+
+.footer-area .social a i {
+    padding: 0rem 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    opacity: .4;
+    transition: .3s;
+}
+
+.footer-area .social h5 {
+    margin: 2rem 0rem;
+    font-family: var(--roboto);
+}
+
+.footer-area .social a:hover i {
+    color: var(--primary-color);
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+
+.footer-area .copyright p {
+    margin-top: 1rem;
+}
+
+/* end subsribe area */
